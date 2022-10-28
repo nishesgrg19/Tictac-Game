@@ -1,0 +1,22 @@
+*{
+    margin: 0px;padding: 0px;
+}
+.main{width: auto;margin: auto;background-color:black;height:100vh;}
+.gameboard{width: 308px;height: 280px;margin:50px auto;display: grid;grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);position: relative;overflow: hidden;}
+.box1{width: 100px;height: 90px;border: 2px solid black;display: inline-block;background-color: azure;font-size:60px;text-align: center;}
+.box1:hover{background-color:cornsilk;}
+.reset{width: 60px;margin: 20px auto;}
+.reset button{padding: 10px;}
+.main h6{color: aliceblue;width:100px;margin: auto;text-align: center;}
+.box1{position: relative;}
+.cut{width:300px;height: 5px;background-color: black;display: inline-block;position: absolute;top: -5px;left:6px;z-index: 1;
+transform: translate(0px,0px) rotate(0deg) ;}
+.gamestart{text-align: center;margin-top: 20px;position: absolute;top: 70px;left: 10px;z-index: 2;}
+.hide{display: none;}
+.develop p{color: aliceblue;width: 200px;margin: auto;}
+.start{background-color:mediumblue;padding: 8px;border-radius: 8px;color: white;width: 290px;height: 100px;z-index: 2;}
+
+@media(max-width:700px){
+    .main h6{font-size: 15px;}
+}
